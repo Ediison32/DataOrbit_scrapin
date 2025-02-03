@@ -1,0 +1,54 @@
+# 🔹 Ignorar entornos virtuales
+venv/
+env/
+*.venv
+*.env
+Pipfile
+Pipfile.lock
+
+# 🔹 Ignorar credenciales sensibles
+.env
+*.env
+config.py  # Si contiene credenciales, mejor usar variables de entorno
+
+# 🔹 Archivos de dependencias locales
+__pycache__/
+*.py[cod]
+*.so
+*.DS_Store
+
+# 🔹 Archivos de logs
+logs/
+*.log
+nohup.out
+
+# 🔹 Archivos generados por Selenium o WebDrivers
+chromedriver.log
+geckodriver.log
+
+# 🔹 Ignorar cachés de Python y compilaciones
+*.egg-info/
+*.pytest_cache/
+.tox/
+
+# 🔹 MongoDB (si tienes dumps locales)
+dump/
+mongod.lock
+*.json
+
+# 🔹 Ignorar archivos de depuración
+debug.log
+scrapy.log
+test_output/
+
+# 🔹 Docker (si lo usas en producción)
+docker-compose.override.yml
+*.dockerignore
+
+# 🔹 Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.iml
+
+src/scraper/eensayo3.py
