@@ -22,7 +22,7 @@ async def enviar_mensaje_telegram(mensaje, chat_id):
     Si falla, envía una notificación al administrador.
 
     """
-    logging.info(f"✅ token**************************************{TELEGRAM_BOT} **** {ADMIN_CHAT_ID}.")
+    
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT}/sendMessage"
     payload = {
         "chat_id": chat_id,
