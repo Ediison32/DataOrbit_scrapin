@@ -6,19 +6,19 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+import sys
 #from services.utils import setup_driver
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.services.utils import setup_driver  # ✅ Correcto
+
 
 #from services.utils import setup_driver
 #import services.utils as st
-from src.database.database import guardar_en_mongo,obtener_info_guardada, comparar_y_guardar
-#from database.database import obtener_de_mongo
+from src.database.database import guardar_en_mongo, obtener_info_guardada, comparar_y_guardar
 #import sys
 
 
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
 # Configuración de logging
